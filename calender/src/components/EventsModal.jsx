@@ -42,10 +42,8 @@ export default function EventsModal() {
           <span className=" text-gray-400">
             <RxHamburgerMenu />
           </span>
-          <button
-            onClick={() => {
-              setShowEventModal(false);
-            }}
+          <div className="flex gap-5 "
+           
           >
             <div
             onClick={()=>{
@@ -59,10 +57,16 @@ export default function EventsModal() {
               )}
               
             </div>
-            <span className=" text-gray-400">
+
+
+            <div className=" text-gray-400"  onClick={() => {
+              setShowEventModal(false);
+            }}>
               <MdCancel />
-            </span>
-          </button>
+            </div>
+
+
+          </div>
         </header>
         <div className="p-3">
           <div className="grid grid-cols-1/5 items-end gap-y-7">
